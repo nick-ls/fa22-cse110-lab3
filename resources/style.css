@@ -1,0 +1,65 @@
+html {
+	display: flex;
+	align-items: center;
+	justify-content: start;
+}
+
+body {
+	width: 70%;
+	margin-left: 10%;
+	margin-right: auto;
+	padding: 2rem;
+	margin-top: 32px;
+}
+nav#agenda {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 1em;
+	padding-top: 0;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+#agenda > h2 {
+	width: fit-content;
+}
+
+#agenda > ol {
+	display: flex;
+	flex-direction: row;
+	list-style: none;
+}
+#agenda li {
+	display: block;
+	padding-left: 0.5em;
+	padding-top: 0.25em;
+	padding-right: 0.5em;
+	padding-bottom: 0.25em;
+}
+table {
+	margin: 1em 0;
+	border: 1px solid black;
+}
+td {
+	border: 1px solid black;
+}
+tr > td:first-child {
+	text-align: center;
+}
+td + td {
+	text-align: end;
+}
+input[type="text"] {
+	transition: border 0.15s;
+	padding: 0.5em;
+	border-radius: 5px;
+	border: 2px solid gray;
+	outline: none;
+	margin: 0.5em 0.25em;
+}
+input[type="text"]:focus {
+	border: 2px solid skyblue;
+}
