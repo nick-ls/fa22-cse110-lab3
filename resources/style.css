@@ -105,6 +105,9 @@ td + td {
 	padding-left: 3em;
 	box-sizing: content-box;
 }
+tr ~ tr td {
+	border-right: 5px solid var(--greej);
+}
 /**
  * Style form area
  */
