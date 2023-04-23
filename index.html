@@ -376,18 +376,22 @@ temp0=Array.from(Array.from(document.querySelectorAll("tr")).map(e=>e.querySelec
 			</datalist>
 			<fieldset>
 				In the event that the new element does not get approved, which of your possessions may be used as matter input to <strong>The Machine</strong>?<br/>
-				<label><input type="checkbox" name="possession" value="car">Car</label><br/>
-				<label><input type="checkbox" name="possession" value="house">House</label><br/>
-				<label><input type="checkbox" name="possession" value="foliage">Foliage</label><br/>
-				<label><input type="checkbox" name="possession" value="heirlooms">Family Heirlooms</label><br/>
-				<label><input type="checkbox" name="possession" value="tomatoes">Family Heirloom Tomatoes</label><br/>
-				<label><input type="checkbox" name="possession" value="ipsum">Lorem Ipsum Collection</label><br/>
-				<label><input type="checkbox" name="possession" value="dirt">Wet Dirt</label><br/>
-				<label><input type="checkbox" name="possession" value="cheese">Cheese Supply</label><br/>
-			</fieldset>
+				<div class="possessions">
+					<label><input type="checkbox" name="possession" value="car">Car</label>
+					<label><input type="checkbox" name="possession" value="house">House</label>
+					<label><input type="checkbox" name="possession" value="foliage">Foliage</label>
+					<label><input type="checkbox" name="possession" value="heirlooms">Family Heirlooms</label>
+					<label><input type="checkbox" name="possession" value="tomatoes">Family Heirloom Tomatoes</label>
+					<label><input type="checkbox" name="possession" value="ipsum">Lorem Ipsum Collection</label>
+					<label><input type="checkbox" name="possession" value="dirt">Wet Dirt</label>
+					<label><input type="checkbox" name="possession" value="cheese">Cheese Supply</label>
+				</div>
+				</fieldset>
 			<textarea name="comments" placeholder="Any additional comments..."></textarea><br/>
 			<button type="reset">Reset</button> &emsp; &emsp;<button type="submit">Submit</button>
 		</form>
+		<img class="furret" src="img/furret-walk.gif"></img>
+		<div id="hide" style="display: none;">hi there</div>
 	</footer>
 </body>
 </html>
