@@ -5,6 +5,9 @@ html {
 	font-family: "Poppins";
 }
 
+/**
+ * Create color vars for use in document
+ */
 :root {
 	--charcoal: #2F394D;
 	--greej: hsl(173, 70%, 35%);
@@ -18,6 +21,7 @@ body {
 	color: var(--charcoal);
 	font-weight: 500;
 }
+
 .content {
 	width: 70%;
 	margin-left: 10%;
@@ -28,6 +32,10 @@ body {
 	border-radius: 5px;
 	box-shadow: 5px 5px 7px 0px grey;
 }
+
+/**
+ * Style the top navigation bar
+ */
 nav#agenda {
 	position: fixed;
 	top: 0;
@@ -42,14 +50,17 @@ nav#agenda {
 	background-color: var(--charcoal);
 	color: white;
 }
-
 nav a {
 	color: white;
 	text-decoration: none;
 	font-weight: bold;
 }
+
+/**
+ * Style the links
+ */
 a {
-	color: --;
+	color: var(--coral);
 }
 a:hover {
 	color: var(--coral);
@@ -59,10 +70,12 @@ a:active {
 	color: var(--greej);
 }
 
+/**
+ * Style agenda
+ */
 #agenda > h2 {
 	width: fit-content;
 }
-
 #agenda > ol {
 	display: flex;
 	flex-direction: row;
@@ -75,6 +88,9 @@ a:active {
 	padding-right: 0.5em;
 	padding-bottom: 0.25em;
 }
+/**
+ * Style table
+ */
 table {
 	margin: 1em 0;
 }
@@ -89,6 +105,9 @@ td + td {
 	padding-left: 3em;
 	box-sizing: content-box;
 }
+/**
+ * Style form area
+ */
 input[type="text"] {
 	transition: border 0.15s;
 	padding: 0.5em 0.5em 0.5em 0.5em;
@@ -144,7 +163,9 @@ button:hover::before {
 button:hover {
 	color: white;
 }
-
+/**
+ * Poorly style the possessions using css grid :)
+ */
 .possessions {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
@@ -166,6 +187,9 @@ button:hover {
 	margin-right: 0.5em;
 }
 
+/**
+ * Bad responsive query attempt
+ */
 @media only screen and (max-width: 700px) {
 	.content {
 		width: 100%;
