@@ -2,14 +2,27 @@ html {
 	display: flex;
 	align-items: center;
 	justify-content: start;
+	font-family: "Poppins";
+}
+
+:root {
+	--charcoal: #2F394D;
+	--greej: hsl(173, 70%, 35%);
+	--coral: rgb(247, 142, 105);
+	--buff: #F1BB87;
+	--flax: #F7EF99;
 }
 
 body {
+	width: 100%;
+}
+.content {
 	width: 70%;
 	margin-left: 10%;
 	margin-right: auto;
 	padding: 2rem;
-	margin-top: 32px;
+	margin-top: 6em;
+	background-color: #EBF5EE;
 }
 nav#agenda {
 	position: fixed;
@@ -18,9 +31,22 @@ nav#agenda {
 	width: 100%;
 	padding: 1em;
 	padding-top: 0;
+	padding-bottom: 0;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
+	background-color: var(--charcoal);
+	color: white;
+}
+
+nav a {
+	color: white;
+}
+a:hover {
+	color: var(--coral);
+}
+a:active {
+	color: var(--greej);
 }
 
 #agenda > h2 {
@@ -72,25 +98,33 @@ textarea {
 	display: none!important;
 }
 button {
-	padding: 0.5em 1em;
+	transition: color 0.2s;
+	padding: 0.5em 1.5em;
 	position: relative;
 	background-color: transparent;
 	cursor: pointer;
-	border: 0.25em solid;
+	border: 0.25em solid var(--coral);
+	color: var(--coral);
+	font-weight: bold;
+	font-size: 1.5em;
+	z-index: 0
 }
 button::before {
 	transition: width 0.2s;
 	content: "";
 	width: 0%;
 	height: 100%;
-	background-color: unset;
+	background-color: var(--coral);
 	position: absolute;
 	top:0;
 	left:0;
+	z-index: -1;
 }
 button:hover::before {
-	width: 100%;
-	z-index: -1;
+	width: 100%;	
+}
+button:hover {
+	color: white;
 }
 
 .possessions {
